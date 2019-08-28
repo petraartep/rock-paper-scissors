@@ -1,5 +1,7 @@
 # Rock-Paper-Scissors
 
+[![Build Status](https://travis-ci.com/petraartep/rock-paper-scissors.svg?branch=master)](https://travis-ci.com/petraartep/rock-paper-scissors)
+
 
 ## Task
 
