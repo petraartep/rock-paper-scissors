@@ -1,9 +1,11 @@
 require 'spec_helper'
 
 feature 'playing a game' do
+  PLAY_SEED = 221563
+
   before do
     visit '/'
-    fill_in 'name', with: 'Dave'
+    fill_in 'name', with: 'Jane'
     click_button 'Submit'
   end
 
@@ -25,6 +27,13 @@ feature 'playing a game' do
 
     expect(possible_messages).to include message
   end
+
+  scenario 'game chooses a random option' do
+    srand(PLAY_SEED)
+    click_button 'Rock'
+    expect(page).to have_content 'Opponent chose Scissors!'
+  end
+
 
   def possible_messages
     [:rock, :paper, :scissors].map { |choice| "Opponent chose #{choice.to_s.capitalize}!" }
