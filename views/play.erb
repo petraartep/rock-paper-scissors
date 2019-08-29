@@ -1,21 +1,67 @@
-Hello, <%= @turn.player_name %>!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel=stylesheet type=text/css href=/stylesheet/play.css />
+  <title>play</title>
+</head>
+<body>
 
-<form method="POST" action="/play">
-  <input type="submit" name="choice" value="Rock" />
-  <input type="submit" name="choice" value="Paper" />
-  <input type="submit" name="choice" value="Scissors" />
-</form>
+  <div class='container'>
+ 
 
-You chose <%= @turn.player_choice.to_s.capitalize %>!
+    <div class='nested'>
+    <div class='title'> Rock - Paper - Scissors</div>
+      <div class='rock'>
+        <form action='/play' method='post'>
+          <input class='rock' type='submit' name='choice' label='rock' value="Rock"></input>
+        </form>
+      </div>
+      <br>
+      <div class='paper'>
+        <form action='/play' method='post'>
+          <input class='paper' type='submit' name='choice' value="Paper"></input>
+        </form>
+      </div>
+      <br>
+      <div class='scissors'>
+        <form action='/play' method='post'>
+          <input class='scissors' type='submit' name='choice' value="Scissors"></input>
+        </form>
+      </div>
 
-<div id="opponent">
-  Opponent chose <%= @turn.opponent_choice.to_s.capitalize %>!
-</div>
+      <div class='player'>
+        You chose <%= @turn.player_choice.to_s.capitalize %>
+      </div>
 
-<% if @turn.win? %>
-You win!
-<% elsif @turn.lose? %>
-You lose!
-<% elsif @turn.draw? %>
-You draw!
-<% end %>
+      <div class='player'>
+        The computer chose <%= @turn.opponent_choice.to_s.capitalize %>
+      </div>
+
+
+      <div class='results'>
+        <div class='win'>
+        <% if @turn.win? %>
+        Win
+        </div>
+        <div class='lose'>
+        <% elsif @turn.lose? %>
+        Lose
+        </div>
+        <div class='tie'>
+        <% elsif @turn.draw? %>
+        Tie
+        </div>
+        <% end %>
+      </div>
+
+    </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
