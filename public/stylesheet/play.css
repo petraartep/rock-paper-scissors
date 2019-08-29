@@ -19,9 +19,9 @@ html {
 .nested {
   background: #25ccea ;
   color: white;
-  border-radius: 5%;
+  border-radius: 20px;
   height: 750px;
-  width: 75x0px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,8 +31,7 @@ html {
 
 .title {
   text-align: center;
-  font-size: 2rem;
-  margin: auto;
+  font-size: 2.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,6 +49,7 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 5%;
   text-shadow: 1px 1px 2px #242423;
 }
 
@@ -147,7 +147,7 @@ html {
   align-items: center;
   text-align: center;
   border: none;
-  border-radius: 30px;
+  border-radius: 50%;
   height: 100px;
   width: 100px; 
   justify-content: center;

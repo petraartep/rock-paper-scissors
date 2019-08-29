@@ -1,0 +1,91 @@
+@-ms-viewport{
+  width: device-width;
+}
+html { 
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.nested {
+  background: #25ccea ;
+  color: white;
+  border-radius: 20px;
+  height: 750px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-shadow: 1px 1px 2px #242423;
+}
+
+.name {
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.name::placeholder {
+  color: #a1ecff
+  font-size: 1.8rem;
+}
+
+.name:hover {
+  background-color: white;
+  color: #242423;   
+}
+
+.name-submit {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px; 
+  margin-top: 50px;
+  justify-content: center;
+  font-size: 1.8rem;
+  background: #ea4325;
+  color: white;
+  line-height: 100px;
+  box-shadow: 2px 2px 3px #242423;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.name-submit:hover {
+  background-color: #ccea25;
+  color: #ffffff;  
+}

@@ -10,55 +10,50 @@
 <body>
 
   <div class='container'>
- 
-
     <div class='nested'>
-    <div class='title'> Rock - Paper - Scissors</div>
-      <div class='rock'>
-        <form action='/play' method='post'>
-          <input class='rock' type='submit' name='choice' label='rock' value="Rock"></input>
-        </form>
-      </div>
-      <br>
-      <div class='paper'>
-        <form action='/play' method='post'>
-          <input class='paper' type='submit' name='choice' value="Paper"></input>
-        </form>
-      </div>
-      <br>
-      <div class='scissors'>
-        <form action='/play' method='post'>
-          <input class='scissors' type='submit' name='choice' value="Scissors"></input>
-        </form>
-      </div>
-
-      <div class='player'>
-        You chose <%= @turn.player_choice.to_s.capitalize %>
-      </div>
-
-      <div class='player'>
-        The computer chose <%= @turn.opponent_choice.to_s.capitalize %>
-      </div>
-
-
-      <div class='results'>
-        <div class='win'>
-        <% if @turn.win? %>
-        Win
+      <div class='title'> Rock - Paper - Scissors</div>
+        <div class='rock'>
+          <form action='/play' method='post'>
+            <input class='rock' type='submit' name='choice' label='rock' value="Rock"></input>
+          </form>
         </div>
-        <div class='lose'>
-        <% elsif @turn.lose? %>
-        Lose
+        <br>
+        <div class='paper'>
+          <form action='/play' method='post'>
+            <input class='paper' type='submit' name='choice' value="Paper"></input>
+          </form>
         </div>
-        <div class='tie'>
-        <% elsif @turn.draw? %>
-        Tie
+        <br>
+        <div class='scissors'>
+          <form action='/play' method='post'>
+            <input class='scissors' type='submit' name='choice' value="Scissors"></input>
+          </form>
         </div>
-        <% end %>
+
+        <div class='player'>
+          You chose <%= @turn.player_choice.to_s.capitalize %>
+        </div>
+
+        <div class='player'>
+          The computer chose <%= @turn.opponent_choice.to_s.capitalize %>
+        </div>
+
+        <div class='results'>
+          <div class='win'>
+          <% if @turn.win? %>
+          Win
+          </div>
+          <div class='lose'>
+          <% elsif @turn.lose? %>
+          Lose
+          </div>
+          <div class='tie'>
+          <% elsif @turn.draw? %>
+          Tie
+          </div>
+          <% end %>
+        </div>
       </div>
-
-    </div>
-
     </div>
   </div>
 
