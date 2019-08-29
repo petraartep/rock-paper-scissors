@@ -54,8 +54,8 @@ I would like to be able to play rock/paper/scissors
 
 ## Run the program
 
-- Clone this repo to your local machine
-- Run `bundle install` (if you don't have bundle already)
+- Clone this repo to your local machine and `cd` into the directory
+- Run `bundle install`
 - Run `rackup` in terminal to start the server and visit `localhost:9292` in your browser
 - Run `rspec` to test the application
 
