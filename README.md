@@ -52,6 +52,20 @@ I would like to be able to play rock/paper/scissors
 - Scissors beats Paper
 - Paper beats Rock
 
+## Approach 
+
+- Build domain model
+- TDD in capybara
+- MVP to make it work
+
+
+## Challenges
+
+- TDD in capybara
+- testing randomness
+- adding CSS to .erb files
+- implement a result class and tests to return the right value
+
 ## Run the program
 
 - Clone this repo to your local machine and `cd` into the directory
