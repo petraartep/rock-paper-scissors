@@ -61,7 +61,15 @@ I would like to be able to play rock/paper/scissors
 
 - Open at https://whispering-caverns-41473.herokuapp.com/
 
+## Screenshots
+
+![screenshot1](https://user-images.githubusercontent.com/23095774/63980425-81f84900-cab3-11e9-9bc1-dcf3511cc028.png)
+![screenshot2](https://user-images.githubusercontent.com/23095774/63980426-81f84900-cab3-11e9-91c1-54740eedbe18.png)
+
+
 ## Passing Test Suites
+
+<img width="587" src="https://user-images.githubusercontent.com/23095774/63980551-eb785780-cab3-11e9-9ffe-5ed6c37a22dd.png">
 
 
 ## Yet to complete
