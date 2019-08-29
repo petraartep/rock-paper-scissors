@@ -17,21 +17,19 @@ feature 'playing a game' do
 
   scenario 'choose a choice' do
     click_button 'Rock'
-    expect(page).to have_content 'You chose Rock!'
+    expect(page).to have_content 'You chose Rock'
   end
 
   scenario 'game chooses "Rock"' do
     click_button 'Rock'
-
-    message = find(:css, "#opponent").text
-
+    message = find(:css, "div.opponent").text
     expect(possible_messages).to include message
   end
 
   scenario 'game chooses a random option' do
     srand(PLAY_SEED)
     click_button 'Rock'
-    expect(page).to have_content 'Opponent chose Scissors!'
+    expect(page).to have_content 'The computer chose Scissors'
   end
 
   context 'end game' do
@@ -41,21 +39,21 @@ feature 'playing a game' do
 
     scenario 'I win' do
       click_button 'Rock'
-      expect(page).to have_content 'You win!'
+      expect(page).to have_content 'Win'
     end
 
     scenario 'I lose' do
       click_button 'Paper'
-      expect(page).to have_content 'You lose!'
+      expect(page).to have_content 'Lose'
     end
 
     scenario 'I draw' do
       click_button 'Scissors'
-      expect(page).to have_content 'You draw!'
+      expect(page).to have_content 'Tie'
     end
   end
 
   def possible_messages
-    [:rock, :paper, :scissors].map { |choice| "Opponent chose #{choice.to_s.capitalize}!" }
+    [:rock, :paper, :scissors].map { |choice| "The computer chose #{choice.to_s.capitalize}" }
   end
 end

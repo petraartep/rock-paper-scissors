@@ -5,6 +5,6 @@ feature 'registering name' do
     visit '/'
     fill_in :name, with: 'Jane'
     click_button 'Submit'
-    expect(page).to have_content 'Jane'
+    expect(page).to have_content 'Rock - Paper - Scissors'
   end
 end
