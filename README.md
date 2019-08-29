@@ -1,7 +1,7 @@
 # Rock-Paper-Scissors
 
-[![Build Status](https://travis-ci.com/petraartep/rock-paper-scissors.svg?branch=master)](https://travis-ci.com/petraartep/rock-paper-scissors) [![Maintainability](https://api.codeclimate.com/v1/badges/7aa908492803f0b4dc26/maintainability)](https://codeclimate.com/github/petraartep/rock-paper-scissors/maintainability)
-
+[![Build Status](https://travis-ci.com/petraartep/rock-paper-scissors.svg?branch=master)](https://travis-ci.com/petraartep/rock-paper-scissors) [![Maintainability](https://api.codeclimate.com/v1/badges/7aa908492803f0b4dc26/maintainability)](https://codeclimate.com/github/petraartep/rock-paper-scissors/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/7aa908492803f0b4dc26/test_coverage)](https://codeclimate.com/github/petraartep/rock-paper-scissors/test_coverage)
+ 
 
 ## Task
 
