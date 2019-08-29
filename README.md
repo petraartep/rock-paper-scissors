@@ -2,14 +2,17 @@
 
 [![Build Status](https://travis-ci.com/petraartep/rock-paper-scissors.svg?branch=master)](https://travis-ci.com/petraartep/rock-paper-scissors) [![Maintainability](https://api.codeclimate.com/v1/badges/7aa908492803f0b4dc26/maintainability)](https://codeclimate.com/github/petraartep/rock-paper-scissors/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/7aa908492803f0b4dc26/test_coverage)](https://codeclimate.com/github/petraartep/rock-paper-scissors/test_coverage) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 
-Simple Rock, Paper, Scissors game
+Simple Rock, Paper, Scissors game deployed on Heroku
+
 
 ## Technologies used
 - Ruby 2.5.0
 - Sinatra 2.0.0
-- Cabybara 2.17
-- RSpec 3.7.0
+- Cabybara 3.28
+- RSpec 3.8.0
 - Rubocop 0.56.
+- SimpleCov
+- Heroku
 
 
 ## Task
@@ -56,6 +59,7 @@ I would like to be able to play rock/paper/scissors
 - Run `rackup` in terminal to start the server and visit `localhost:9292` in your browser
 - Run `rspec` to test the application
 
+- Open at https://whispering-caverns-41473.herokuapp.com/
 
 ## Passing Test Suites
 
