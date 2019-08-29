@@ -2,7 +2,7 @@ require 'turn'
 
 describe Turn do
   subject(:turn) { described_class.new(options) }
-let(:options) { {"player_name" => "Jane", "player_choice" => :rock, "opponent_choice" => :scissors} }
+  let(:options) { { "player_name" => "Jane", "player_choice" => :rock, "opponent_choice" => :scissors } }
 
   describe '#player_name' do
     it 'returns player name' do
@@ -27,8 +27,8 @@ let(:options) { {"player_name" => "Jane", "player_choice" => :rock, "opponent_ch
     subject(:lose_turn) { described_class.new(lose_options) }
     subject(:draw_turn) { described_class.new(draw_options) }
 
-    let(:lose_options) { {"player_name" => "Dave", "player_choice" => :rock, "opponent_choice" => :paper} }
-    let(:draw_options) { {"player_name" => "Dave", "player_choice" => :rock, "opponent_choice" => :rock} }
+    let(:lose_options) { { "player_name" => "Dave", "player_choice" => :rock, "opponent_choice" => :paper } }
+    let(:draw_options) { { "player_name" => "Dave", "player_choice" => :rock, "opponent_choice" => :rock } }
 
     describe '#win?' do
       it 'returns true if player_choice is :rock and opponent_choice is :scissors' do
