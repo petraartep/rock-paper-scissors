@@ -78,7 +78,7 @@ I would like to be able to play rock/paper/scissors
 ## Screenshots
 
 <p align="center">
-<img width="400" height="800" src="https://user-images.githubusercontent.com/23095774/63980425-81f84900-cab3-11e9-9bc1-dcf3511cc028.png"><img width="400" height="800" src=https://user-images.githubusercontent.com/23095774/63980426-81f84900-cab3-11e9-91c1-54740eedbe18.png"></p>
+<img width="400" height="650" src="https://user-images.githubusercontent.com/23095774/63980425-81f84900-cab3-11e9-9bc1-dcf3511cc028.png"><img width="400" height="650" src="https://user-images.githubusercontent.com/23095774/63980426-81f84900-cab3-11e9-91c1-54740eedbe18.png"></p>
 
 
 ## Passing Test Suites
