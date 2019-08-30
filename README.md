@@ -55,16 +55,19 @@ I would like to be able to play rock/paper/scissors
 ## Approach 
 
 - Build domain model
-- TDD in capybara
-- MVP to make it work
+- Setup RSpec, Capybara, Travis CI, Rubocop
+- TDD in Capybara
+- MVP just to make it work
+- Adding CSS
+- Deploying to Heroku
 
 
 ## Challenges
 
-- TDD in capybara
-- testing randomness
-- adding CSS to .erb files
-- implement a result class and tests to return the right value
+- TDD in Capybara
+- Understanding MVC 
+- Testing randomness
+- Implementing the rules and tests to return the right value
 
 ## Run the program
 
