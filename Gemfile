@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem 'rake', '~> 11.2', '>= 11.2.2'
+gem 'rake', '~> 12.3'
 gem 'sinatra', '~> 2.0', '>= 2.0.5'
 
 group :test do
